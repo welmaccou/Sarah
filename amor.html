@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Para Sarah</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #ffebee; /* Fundo rosa bem claro */
+            margin: 0;
+            overflow: hidden; /* Evita barras de rolagem */
+            font-family: Arial, sans-serif;
+        }
+
+        .heart-container {
+            text-align: center;
+        }
+
+        .heart {
+            font-size: 200px; /* Tamanho do coração */
+            color: #e91e63; /* Cor do coração */
+            animation: pulse 1.5s infinite; /* Aplica a animação 'pulse' que se repete infinitamente */
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2); /* Aumenta o tamanho em 20% no meio da animação */
+            }
+            100% {
+                transform: scale(1); /* Volta ao tamanho original */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="heart-container">
+        <span class="heart">❤️</span>
+    </div>
+
+</body>
+</html>
