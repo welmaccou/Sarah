@@ -5,12 +5,13 @@
     <style>
         body {
             display: flex;
+            flex-direction: column; /* Organiza os itens em coluna */
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-color: #ffebee; /* Fundo rosa bem claro */
+            background-color: #ffebee;
             margin: 0;
-            overflow: hidden; /* Evita barras de rolagem */
+            overflow: hidden;
             font-family: Arial, sans-serif;
         }
 
@@ -19,9 +20,17 @@
         }
 
         .heart {
-            font-size: 200px; /* Tamanho do coração */
-            color: #e91e63; /* Cor do coração */
-            animation: pulse 1.5s infinite; /* Aplica a animação 'pulse' que se repete infinitamente */
+            font-size: 200px;
+            color: #e91e63;
+            animation: pulse 1.5s infinite;
+        }
+
+        .message {
+            margin-top: 20px; /* Adiciona um espaço entre o coração e a mensagem */
+            font-size: 3em;
+            color: #c2185b; /* Uma cor rosa mais escura para a mensagem */
+            font-family: 'Brush Script MT', cursive;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
         }
 
         @keyframes pulse {
@@ -29,10 +38,10 @@
                 transform: scale(1);
             }
             50% {
-                transform: scale(1.2); /* Aumenta o tamanho em 20% no meio da animação */
+                transform: scale(1.2);
             }
             100% {
-                transform: scale(1); /* Volta ao tamanho original */
+                transform: scale(1);
             }
         }
     </style>
@@ -41,6 +50,10 @@
 
     <div class="heart-container">
         <span class="heart">❤️</span>
+    </div>
+
+    <div class="message">
+        Eu te amo!!!
     </div>
 
 </body>
